@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body style="background: lightcyan" >
+
+
+
+<details style="margin-bottom: 0.5rem; text-align: center; font-family: Montserrat" >
+  <summary style="Montserrat-Bold">Базовый ТВ</summary>
+    <h5>Выполнено {{f[0]}} / 2</h5>
+    <canvas id="myCanvas8" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas8");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "green";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "green";
+ctx.fillRect(10, 10, 110*({{f[0]}} / 2), 20);
+</script>
+  <details>
+    <summary>ТВ</summary>
+        <p> Задание: Посмотрите ТВ 10 минут</p>
+      <p>Выполнено {{ans[0][0]}} из {{ans[0][1]}}</p>
+      <canvas id="myCanvas" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[0][0]}} / {{ans[0][1]}}), 20);
+</script>
+        </details>
+    <details>
+    <summary>Радио</summary>
+        <p>Задание: Послушайте радио 10 минут</p>
+        <p>Выполнено {{ans[1][0]}} из {{ans[1][1]}}</p>
+        <canvas id="myCanvas1" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas1");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[1][0]}} / {{ans[1][1]}}), 20);
+</script>
+        </details>
+
+</details>
+<details style="margin-bottom: 0.5rem; text-align: center; font-family: Montserrat">
+  <summary style="Montserrat-Bold">Все для фильмов</summary>
+    <h5>Выполнено {{f[1]}} / 2</h5>
+    <canvas id="myCanvas9" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas9");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "green";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "green";
+ctx.fillRect(10, 10, 110*({{f[1]}} / 2), 20);
+</script>
+    <details>
+  <summary>Как посмотреть фильм?</summary>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RXoUoJjrNn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Задание: Посмотрите фильм 30 минут</p>
+        <p>Выполнено {{ans[2][0]}} из {{ans[2][1]}}</p>
+        <canvas id="myCanvas2" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[2][0]}} / {{ans[2][1]}}), 20);
+</script>
+    </details>
+    <details>
+  <summary>Как остановить фильм?</summary>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/JxWt8rRSDYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <fieldset>
+            <p>Задание: Поставьте фильм на паузу</p>
+            <p>Выполнено {{ans[3][0]}} из {{ans[3][1]}}</p>
+            <canvas id="myCanvas3" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas3");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[3][0]}} / {{ans[3][1]}}), 20);
+</script>
+</fieldset>
+    </details>
+    <p>Как перемотать фильм</p>
+    <p>Скачивание фильмов</p>
+    <p>Как выбрать избранные каналы</p>
+    <p>Как обменять фильм</p>
+    <p>Блогеры</p>
+  </details>
+<details style="margin-bottom: 0.5rem; text-align: center; font-family: Montserrat">
+  <summary style="Montserrat-Bold">Все для совместного просмотра</summary>
+    <h5>Выполнено {{f[2]}} / 2</h5>
+    <canvas id="myCanvas10" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas10");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "green";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "green";
+ctx.fillRect(10, 10, 110*({{f[2]}} / 2), 20);
+</script>
+  <details>
+    <summary>Караоке</summary>
+        <p>Задание: Спойте одну песню</p>
+      <p>Выполнено {{ans[4][0]}} из {{ans[4][1]}}</p>
+      <canvas id="myCanvas4" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[4][0]}} / {{ans[4][1]}}), 20);
+</script>
+  </details>
+  <details>
+    <summary>Как посмотреть фильм с друзьями</summary>
+        <p>Задание: Посмотрите фильм вместе с другом</p>
+      <p>Выполнено {{ans[5][0]}} из {{ans[5][1]}}</p>
+      <canvas id="myCanvas5" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas5");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[5][0]}} / {{ans[5][1]}}), 20);
+</script>
+        </details>
+</details>
+<details style="margin-bottom: 0.5rem; text-align: center; font-family: Montserrat">
+  <summary style="Montserrat-Bold">Семейные режимы</summary>
+    <h5>Выполнено {{f[3]}} / 2</h5>
+    <canvas id="myCanvas11" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas11");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "green";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "green";
+ctx.fillRect(10, 10, 110*({{f[3]}} / 2), 20);
+</script>
+   <details>
+    <summary>Как сделать аккаунт для ребенка</summary>
+        <p>Задание: Создайте детский аккаунт</p>
+       <p>Выполнено {{ans[6][0]}} из {{ans[6][1]}}</p>
+       <canvas id="myCanvas6" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas6");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[6][0]}} / {{ans[6][1]}}), 20);
+</script>
+   </details>
+<details>
+    <summary>Как поставить ограничения на каналы/контент</summary>
+        <p>Задание: Ограничьте длительность просмотра фильма</p>
+    <p>Выполнено {{ans[7][0]}} из {{ans[7][1]}}</p>
+    <canvas id="myCanvas7" width="150" height="35" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas7");
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = "2";
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 110, 20);
+
+ctx.fillStyle = "red";
+ctx.fillRect(10, 10, 110*({{ans[7][0]}} / {{ans[7][1]}}), 20);
+</script>
+        </details>
+    <p>Мультискрин</p>
+</details>
+</body>
+</html>
